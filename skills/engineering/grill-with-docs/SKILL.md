@@ -1,6 +1,6 @@
 ---
 name: grill-with-docs
-description: Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions.
+description: Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions. This helps prevent AI hallucinations and narrative drift, ensuring the user's actual intent is clarified and maintained.
 ---
 
 <what-to-do>
@@ -22,8 +22,6 @@ During codebase exploration, also look for existing documentation:
 ### File structure
 
 Most repos have a single context:
-
-```
 /
 ├── CONTEXT.md
 ├── docs/
@@ -77,7 +75,7 @@ When a term is resolved, update `CONTEXT.md` right there. Don't batch these up �
 
 ### Offer ADRs sparingly
 
-Only offer to create an ADR when all three are true:
+Only offer to reate an ADR when all three are true:
 
 1. **Hard to reverse** — the cost of changing your mind later is meaningful
 2. **Surprising without context** — a future reader will wonder "why did they do it this way?"
